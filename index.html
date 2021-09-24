@@ -22,11 +22,13 @@
 
     </style>
 
+
+
 <p style="color: #377DB8"><img src="logo.png" alt="Logo" height="40"><b>@viewpoints</b></p>
 <hr style="border:groove;">
-<p>
+<p> <span>
   Select the subject and topic:
-<select class="subject" name="Subjects">
+<select class="subject" name="Subjects" id="subject">
   <option value="culture">Culture</option>
   <option value="security">Security</option>
   <option value="disasters">Disasters</option>
@@ -42,7 +44,8 @@
   <option value="society">Society</option>
 </select>
 
-<select class="topic" name="Topic">
+
+<select class="topic" name="Topics" id="topic">
   <option value="capital">Capital</option>
   <option value="revenue">Revenue</option>
   <option value="expenditure">Expenditure</option>
@@ -56,18 +59,21 @@
   <option value="growth">Growth</option>
   <option value="development">Development</option>
 </select>
+<script src="jquery-3.6.0.min.js"></script>
+
 
 <button type="button" name="button">Submit</button>
 
 <div class="relevance">
   <button type="button" name="button">Relevant for</button>
   <div class="dropdown-content">
-    <a href="#" class="comp-exams">Competitve Exams | </a>
+    <a href="#" class="comp-exams">Competitive Exams | </a>
     <a href="#" class="academics">Academics | </a>
     <a href="#" class="policy">Policy Inputs | </a>
     <a href="#" class="discussions">Debates and Discussions</a>
   </div>
 </div>
+</span>
 </p>
 <hr style="border:groove;">
   </head>
@@ -76,7 +82,7 @@
 
 
   <div class="surveillance security polity technology" id="AA00001">
-    <table>
+    <table id="AA00001">
       <tr>
        <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
        <td><table>
@@ -125,8 +131,8 @@
     </div>
     <hr>
 
-<div class="education economy ranking governance" id="AA00003">
-    <table>
+<div class="education economy ranking governance">
+    <table id="AA00003">
         <tr>
         <td><img src="academic-rankings.jpeg" alt="Academic Ranking" width="300"></td><td><table>
           <tr>
@@ -1546,7 +1552,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\fed03.jpeg" alt="Issues related to Women"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -1671,7 +1677,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\fed04.jpeg" alt="Tax Revenue"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -1999,14 +2005,14 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\gov01.jpg" alt="Governance"width="300"></td>
          <td><table>
            <tr>
              <tr>
                <td><b>Governance</b></td>
              </tr>
              <tr>
-               <td>In the end, all governments are run by politicians and politicians, as a rule, tend to put political expediency over all else, even very good advice from the brightest brains in the land. Pinarayi Vijayan quickly dumped Gopinath after a kerfuffle over using a "capitalist" economist. One of the first things that Abhijit Banerjee told the Mamata government to do last year was to ramp up testing, which it totally ignored. A Karnataka-based environment group has even moved court alleging that the Centre ignored it's own expert panel's recommendations on environmental laws. The Centre also famously ignored it's own expert panel's suggestions on Covid responsesresponses and most States, in turn, have ignored the Centre's expert panel advisories on lockdowns and unlocks.</td>
+               <td>In the end, all governments are run by politicians and politicians, as a rule, tend to put political expediency over all else, even very good advice from the brightest brains in the land. Pinarayi Vijayan quickly dumped Gopinath after a kerfuffle over using a "capitalist" economist. One of the first things that Abhijit Banerjee told the Mamata government to do last year was to ramp up testing, which it totally ignored. A Karnataka-based environment group has even moved court alleging that the Centre ignored it's own expert panel's recommendations on environmental laws. The Centre also famously ignored it's own expert panel's suggestions on Covid responses and most States, in turn, have ignored the Centre's expert panel advisories on lockdowns and unlocks.</td>
              </tr>
              <tr>
                <td><i>The Business Line | June 24, 2021</i></td>
@@ -2024,7 +2030,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\feminist-technology.jpg" alt="Predictive policing"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2049,7 +2055,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\cor01.jpg" alt="Corporate Governance"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2075,7 +2081,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\wor02.jpg" alt="Inclusive Growth"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2101,7 +2107,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\vacc01.jpg" alt="Services related to Health"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2127,7 +2133,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\wor01.jpg" alt="Digital Economy"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2152,7 +2158,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\fed02.jpeg" alt="Indian Judiciary"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2178,7 +2184,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\hell0.jpg" alt="Services related to Health"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2204,7 +2210,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\hor0.jpg" alt="Predictive policing"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2229,7 +2235,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\techa0.jpg" alt="Predictive policing"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2254,7 +2260,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\lea00.jpg" alt="Governance"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2280,7 +2286,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\lea01.jpg" alt="Infrastructure"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2305,7 +2311,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\bai01.jpg" alt="Rule of Law"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2330,7 +2336,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\vot01.jpg" alt="Political Donations"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2355,7 +2361,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\act01.jpg" alt="Predictive policing"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2380,7 +2386,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\chin0.jpg" alt="Globalisation"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2405,7 +2411,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\dom01.jpg" alt="Issues related to Women"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2431,7 +2437,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\vacc0.jpg" alt="Services related to Health"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2456,7 +2462,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\jud01.jpg" alt="Role of Indian Judiciary"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2481,11 +2487,11 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\pov04.jpg" alt="Recent developments in Indian Politics"width="300"></td>
          <td><table>
            <tr>
              <tr>
-               <td><b>Recent developmments in Indian Politics</b></td>
+               <td><b>Recent developments in Indian Politics</b></td>
              </tr>
              <tr>
                <td>The fight against images is a battle against memory. It is easier to deny an event, hide injustice and remove it from public memory when no visuals of it exist. But with the nature of images in today's world of social media where the catastrophe is just short of being live-streamed such suppression is a challenging task.</td>
@@ -2506,7 +2512,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\fed01.jpeg" alt="Centre- State Relations"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2531,7 +2537,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\lab00.jpg" alt="Industry and Labour"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2556,7 +2562,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\pov03.jpg" alt="Understanding Poverty"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2581,7 +2587,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\tax00.jpg" alt="Tax Reforms"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2606,7 +2612,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\eve00.jpg" alt="Pollution and Degradation"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2631,7 +2637,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\cen00.jpg" alt="Transparency and Accountability"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2656,7 +2662,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\vacc04.jpg" alt="Intellectual Property Right"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2681,7 +2687,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\bio00.jpg" alt="Regulatory Structure"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2706,7 +2712,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\eco00.jpg" alt="Recent Developments in Indian Politics"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2731,7 +2737,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\deb01.jpg" alt="State Legislatures"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2756,7 +2762,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\vacc02.jpg" alt="International Trade"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2781,7 +2787,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\vacc03.jpg" alt="Public Private Partnership"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2806,7 +2812,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\tru00.jpg" alt="E-Governance"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2831,7 +2837,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\bur00.jpg" alt="Local Self Government"width="300"></td>
          <td><table>
            <tr>
              <tr>
@@ -2857,7 +2863,7 @@
         <div class="september economy">
         <table>
         <tr>
-         <td><img src="predictive-policing.jpeg" alt="Predictive policing"width="300"></td>
+         <td><img src="images\000.jpg" alt="Recent Developments in Indian Politics"width="300"></td>
          <td><table>
            <tr>
              <tr>
