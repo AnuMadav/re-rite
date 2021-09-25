@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Re-rite</title>
-
+<script src="jquery-3.6.0.min.js"></script>
     <style media="screen">
       body{
         background-color: white;
@@ -19,61 +19,96 @@
       hr{
         border: none;
       }
-
+      .relevance{
+        text-align: center;
+      }
+      .container{
+        margin-top: 20px;
+        margin-left: 80%;
+      }
+      .f-group{
+        float: bottom;
+      }
+      .f-group{
+        display: block;
+      }
     </style>
 
-
-
-<p style="color: #377DB8"><img src="logo.png" alt="Logo" height="40"><b>@viewpoints</b></p>
-<hr style="border:groove;">
-<p> <span>
-  Select the subject and topic:
-<select class="subject" name="Subjects" id="subject">
-  <option value="culture">Culture</option>
-  <option value="security">Security</option>
-  <option value="disasters">Disasters</option>
-  <option value="economy">Economy</option>
-  <option value="environment">Environment</option>
-  <option value="geography">Geography</option>
-  <option value="governance">Governance</option>
-  <option value="history">History</option>
-  <option value="intlaffairs">International Affairs</option>
-  <option value="polity">Polity</option>
-  <option value="science">Science</option>
-  <option value="technology">Technology</option>
-  <option value="society">Society</option>
-</select>
-
-
-<select class="topic" name="Topics" id="topic">
-  <option value="capital">Capital</option>
-  <option value="revenue">Revenue</option>
-  <option value="expenditure">Expenditure</option>
-  <option value="tax">Tax</option>
-  <option value="debt">Debt</option>
-  <option value="policy">Policy</option>
-  <option value="resource">Resource</option>
-  <option value="employment">Employment</option>
-  <option value="demography">Demography</option>
-  <option value="income">Income</option>
-  <option value="growth">Growth</option>
-  <option value="development">Development</option>
-</select>
-<script src="jquery-3.6.0.min.js"></script>
-
-
-<button type="button" name="button">Submit</button>
-
+<p style="color: #377DB8"><img src="logo.png" alt="Logo" height="50"><b>@viewpoints</b></p>
 <div class="relevance">
-  <button type="button" name="button">Relevant for</button>
   <div class="dropdown-content">
+    <a href="#" class="home"> Home | </a>
     <a href="#" class="comp-exams">Competitive Exams | </a>
     <a href="#" class="academics">Academics | </a>
     <a href="#" class="policy">Policy Inputs | </a>
     <a href="#" class="discussions">Debates and Discussions</a>
   </div>
+  </div>
+<p> <span>
+<hr style="border:groove;">
+
+<div class="container">
+  <div class= "f-group">
+    <label for="">Select Topic</label>
+    <select class="f-group" name="s1" id="slct1" onchange= "populate(this.id,'slct2')">
+      <option value="">--Subject--</option>
+      <option value="culture">Culture</option>
+      <option value="security">Security</option>
+      <option value="disasters">Disasters</option>
+      <option value="economy">Economy</option>
+      <option value="environment">Environment</option>
+      <option value="geography">Geography</option>
+      <option value="governance">Governance</option>
+      <option value="history">History</option>
+      <option value="intlaffairs">International Affairs</option>
+      <option value="polity">Polity</option>
+      <option value="science">Science</option>
+      <option value="technology">Technology</option>
+      <option value="society">Society</option>
+    </select>
+    <br>
+  </div>
+  <div class="f-group">
+    <label for=""></label>
+    <select class="f-group" name="slct2" id="slct2">
+    </select>
+    <button type="button" name="button">Submit</button>
+  </div>
 </div>
-</span>
+</p>
+
+<script type="text/javascript">
+  function populate(s1,s2)
+  {
+    var s1 = document.getElementbyId(s1);
+    var s2 = document.getElementbyId(s2);
+
+    s2.innerHTML = "";
+
+    if(s1.value == "culture")
+    {
+      var optionArray = ["|", "dance|Dance", "drama|Drama"];
+    }
+    else if (s1.value == "polity")
+    {
+      var optionArray = ["constitution|Constitution", "legislation|Legislation"];
+    }
+    for(var option in optionArray)
+    {
+      var pair = optionArray[option].split("|");
+      var newoption = document.createElement("option");
+
+      newoption.value = pair[0];
+      newoption.innerHTML = pair[1];
+      s2.options.add(newoption);
+    }
+  }
+</script>
+
+<!--
+  <button type="button" name="button">Relevant for</button>
+
+</span> -->
 </p>
 <hr style="border:groove;">
   </head>
