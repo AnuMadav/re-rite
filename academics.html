@@ -15,9 +15,7 @@
       list-style-type: none;
     }
     .terminologies{
-      border: 2px;
-      border-style: solid;
-      border-color: #377DB8;
+      border: none;
       border-radius: 15px;
       padding: 5px 5px;
       text-align: center;
@@ -25,9 +23,57 @@
       margin-left: 1050px;
       position: absolute;
       width: 250px;
-      height: 500px;
+      height: auto;
       color: black;
       background-color: #aadaf5;
+    }
+    .rtable{
+      position: relative;
+      top: auto;
+      left: auto;
+      width: 100%
+      margin: 0 0 0.5em 0;
+      padding: 0.6em 0.6em 0.6em;
+      border-radius: 0.5em;
+      text-align:center;
+      border:none;
+      background-color: #377DB8;
+      font-weight: bold;
+      color: grey;
+      text-decoration: none;
+      transition: background-color 0.1s;
+      cursor: pointer;
+      &:hover, &:focus{
+        outline: none;
+        filter: constrast(150%);
+      }
+      &[aria-selected="true"]{
+        margin-bottom: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-width: 0;
+        background: green;
+      }
+      &:before{
+        content: "+"
+        position:absolute;
+        top:50%;
+        left: 0.3em;
+        margin-top: auto;
+        font-weight: normal;
+        font-size: 2em;
+        line-height: 2em;
+        background-size: 2em;
+      }
+      &[aria-selected="true"]:before{
+        content:"-";
+      }
+      .js-rTable{
+        min-width: 240px;
+      }
+      .hiddenSmall{
+        display: none;
+      }
     }
   </style>
   <div class="header">
@@ -40,8 +86,63 @@
     <body>
 <div class="terminologies">
 <p><b>Terminologies</b></p>
-this section is intended to contain all the terminologies that are in news.
+<input type="search" placeholder="Search for:"name="" value="">
+<button type="button" name="button">Go</button>
+<br>
+<br>
+<div class="rtable">
+  <button class="terminologies" role="tab" tabindex="0" aria-selected= "true">Lottocracy</button><br>
+  <button class="rtablecell">Lottocracy is a government of people by people recruited for office via a public lottery system. The lottery system would largely resemble the various systems in place today for choosing jury pools. The idea of lottocracy is not alien to India. In 1993, a constitutional amendemnt incorporated in which one-third of the seats were reserved for women. In each electoral cycle, specific seats are randomly identified for reservation. This is lottocracy at seat level.</button>
+  <button class="terminologies" role="tab" aria-selected= "false"><b>Self Regulatory Organisations</b></button><br>
+  <button class="rtablecell">A Self Regulatory Organisation is an entity which has the power to create and enforce stand-alone industry and professional regulations nd standards on its own. SROs typically collaborate with stakeholders in framing rules and regulations. An SRO is expected to address concerns beyond the narrow self-interests of the industry, such as to protect workers, customers or other participants in the ecosystem.</button>
+  <button class="terminologies" role="tab" aria-selected= "false">Reputational Laundering</button><br>
+  <button class="rtablecell">Reputational Laundering is jhkhkfvllfnlbl.</button>
 </div>
+<br>
+<br>
+</div>
+
+<script type="text/javascript">
+(function ($) {
+  "use strict";
+  $.fn.responsiveTable = function()
+  {
+    var toggleColumns = function($table) {
+      var selectedControls = [];
+      $table.find(".terminologies").each(function({
+        selectedControls.push(
+          $(this).attr("aria-selected") );
+        });
+    var cellCount = 0, colCount = 0;
+    var setNum = $table.find(".rtablecell").length/Math.max(
+        $table.find(".terminologies").length);
+        $table.find(".rtablecell").each(function()){
+        $(this).addClass("hiddenSmall");
+        if(
+        selectedControls[colCount] === "true")
+        $(this).removeClass("hiddenSmall");
+        cellCount++;
+        if (cellCount % setNum === 0
+        )colCount++;
+      });
+    };
+
+    $(this).each(function({
+    toggleColumns($(this));  });
+
+    $(this).find(".terminologies").click(
+    function(){
+    $(this).attr("aria-selected", $(this).attr("aria-selected") !=="true")};
+    toggleColumns(
+    $(this).parents(".rtable") );
+  });
+
+});
+}(jQuery));
+
+$(".js-rTable").responsiveTable();
+
+</script>
 
 <div class="polity">
       <div class="federalism">
