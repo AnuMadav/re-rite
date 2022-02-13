@@ -1,163 +1,132 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Policy Inputs</title>
-<style media="screen">
-  .bodytable {
-    color: black;
-    margin-left: 15%;
-    margin-right: 15%;
-    padding:15px;
-    border-style: none;
-    border-radius: 1px;
-    border-color: white;
-    border-radius: 15px 15px 15px 15px;
-    background-color: #aadaf5;
-  }
-  .profilephoto {
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-    border-radius: 50%
-  }
-  a:link {
-    text-align: left;
-    display: inline-table;
-    text-decoration: none;
-    color: black;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  a:visited{
-    color:black;
-  }
-  .align{
-    width: 80%
-    color:red;
-  }
-  #container{
-    margin-top: 20px;
-    margin-left: 40%;
-  }
-  .f-group{
-    float: left;
-    margin:bottom;
-    align-items: stretch;
-  }
-  .f-group{
-    display: block;
-  }
-  h4{
-    color: #377DB8;
-  }
-</style>
 
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>Policy Inputs</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/master.css">
+</head>
 
-  <body>
-    <div class="header">
-      <p style="color: #377DB8"><img src="logo.png" alt="Logo" height="50"><b>@viewpoints</b></p>
-    </div>
-    <h4>Policy Inputs for entries enumerated under Schedule 7 of the Indian Constitution</h4>
-<hr>
+<body>
+  <nav class="nav nav-pills nav-fill justify-content-center">
+    <a class="nav-link active" href="#"></a>
+    <a class="nav-link" href="index.html">HOME</a>
+    <a class="nav-link" href="compexams.html">COMPETITIVE EXAMS</a>
+    <a class="nav-link" href="academics.html">ACADEMICS</a>
+    <a class="nav-link" href="policy.html">POLICY INPUTS</a>
+    <a class="nav-link" href="debates.html">DEBATES AND DISCUSSIONS</a>
+  </nav>
 
+  <!--divide page-->
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
 
-<div id="container">
-  <div class= "f-group">
-    <label for="container"></label>
-      <select name="slct1" id="slct1" onchange= "populate(this.id,'slct2')">
-      <option value="unionlist">Union List</option>
-      <option value="statelist">State List</option>
-      <option value="concurrentlist">Concurrent List</option>
-    </select>
+      <div class="container pt-3">
+
+        <div class="card bg-primary text-white">
+          <div class="card-body">Issues relating to Federalism</div>
+        </div>
+        <div class="card text-center">
+   <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec maximus lorem. Suspendisse in lectus eu diam suscipit condimentum quis quis nibh. Nulla sed dui a lacus fermentum vulputate et luctus dolor. Nulla eu arcu interdum, tempus ligula quis, auctor augue. Donec dignissim tortor pellentesque turpis elementum pharetra. Donec id ex vel lectus luctus sodales ut nec lacus. Ut iaculis diam eros, vel ornare nunc imperdiet ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et tortor arcu. Suspendisse dui eros, aliquam non nisl in, consequat pulvinar libero. Nunc hendrerit non lectus sed accumsan. Aliquam aliquam nec quam a lacinia. Donec at erat velit. Nullam ac arcu massa.</p>
+    <a href="#" class="btn btn-primary">Read Report</a>
   </div>
-  <div class="f-group">
-    <select name="slct2" id="slct2">
-      <option value="">--List of Subjects--</option>
-    </select>
-    <button type="button" name="button">Submit</button>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec maximus lorem. Suspendisse in lectus eu diam suscipit condimentum quis quis nibh. Nulla sed dui a lacus fermentum vulputate et luctus dolor. Nulla eu arcu interdum, tempus ligula quis, auctor augue. Donec dignissim tortor pellentesque turpis elementum pharetra. Donec id ex vel lectus luctus sodales ut nec lacus. Ut iaculis diam eros, vel ornare nunc imperdiet ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et tortor arcu. Suspendisse dui eros, aliquam non nisl in, consequat pulvinar libero. Nunc hendrerit non lectus sed accumsan. Aliquam aliquam nec quam a lacinia. Donec at erat velit. Nullam ac arcu massa.</p>
+    <a href="#" class="btn btn-primary">Read Report</a>
   </div>
 </div>
-<br><br>
 
 
-<div class="bodytable">
-
-  <!--
-              <div class="">
-                <li style="list-style-type:none">
-                  <table>
-                  <table id="">
-                    <tr>
-                      <td><img src=".jpg" alt="" class="profilephoto"></td>
-                      <td><table>
-                        <tr>
-                          <tr>
-                            <td id=""><b>Background:</b> </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <table>
-                                <b>Recommendation(s)</b></td>
-                                <li style="list-style-type:circle"></li>
-                                <li style="list-style-type:circle"></li>
-                              </table>
-                          </tr>
-                          <tr>
-                            <td><b>Based on: </b></td>
-                          </tr>
-                          <tr>
-                            <td><b>Published on: </b></td>
-                          </tr>
-                          <tr>
-                          <td><i> <a href=""></a></i></td>
-                          </tr>
-                      </table>
-                      </table>
-                  </li>
-                  </div>
-                  <hr>
-  -->
 
 
-        <div class="vidhi emarketplace">
-          <li style="list-style-type:none">
-            <table>
-            <table id="T00001">
-              <tr>
-                <td><img src="policypics/vidhi.png" alt="emarketplace" class="profilephoto"></td>
-                <td><table>
-                  <tr>
-                    <tr>
-                      <td id="00001"><b>Background:</b> In 2021, India e-commerce retail segment has grown by 25% during the pandemic. India's e-commerce is concentrated, with few marketplaces holding a large portion of the consumer facing market share. Small sellers and businesses are becoming reliant on e-marketplace giants to reach e-commerce consumers. E-marketplace giants control entry into the e-commerce market and such act as 'gatekeepers'. E-marketplaces also play the dual role of being both an infrastructure provider and a competitor selling on the same platform. This has led to several competition issues in the P2P equation which include self-preferencing and deep discounting.</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <table>
-                          <b>Recommendation(s)</b></td>
-                          <li style="list-style-type:circle">Emerging international regulatory consensus to selectively designate and regulate large incumbent 'gatekeeping' platforms.</li>
-                          <li style="list-style-type:circle">The preferred <i>modus operandi</i> is through complementary <i>ex-ante</i> competition regulation that is aimed at preventing certain unfair conducts such as self-preferencing and anti-competitive leveraging, imposition of unfair contract terms such as most favoured nation clauses and exclusive selling, and to promote transparency in collection and usage of aggregated consumer data.</li>
-                          <li style="list-style-type:circle">Tighter scrutiny of mergers and acquisitions involving gatekeepers by introducing new thresholds as well as new substantiative standards for such merger assessments.</li>
-                          <li style="list-style-type:circle">The establishment of units either within existing regulators or as new authority to build expertise and aid enforcement in fast evolving digital markets.</li>
-                        </table>
-                    </tr>
-                    <tr>
-                      <td><b>Based on: </b>Independent assessments by Vidhi Centre for Legal Policy</td>
-                    </tr>
-                    <tr>
-                      <td><b>Published on: </b>September 23, 2021</td>
-                    </tr>
-                    <tr>
-                    <td><i> <a href="https://vidhilegalpolicy.in/research/fair-and-competitive-e-marketplaces-f-a-c-e-the-business-users-narrative/"> On Fair and Competitive E-Marketplaces- The Business Users' Narrative</a></i></td>
-                    </tr>
-                </table>
-                </table>
-            </li>
-            </div>
-            <hr>
+
+
+
+
+
+
+
+
 
       </div>
-  </body>
-</html>
+    </div>
+
+
+
+
+
+    <div class="col-3">
+      <br>
+      <nav class="container terminologies bg-dark justify-content-center nav">
+        <div class="p-2"><br>
+          <form>
+    <div class="form-row align-items-center">
+      <div class="col-auto my-1">
+        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+          <option selected>Choose...</option>
+          <option value="1">Federalism</option>
+          <option value="2">Electric Vehicles </option>
+          <option value="3">Lockdown</option>
+          <option value="3">Pandemic</option>
+        </select>
+        <button type="submit" class="">Submit</button>
+      </div>
+    </div>
+  </form>
+      </nav>
+      <br>
+      <div class="accordion accordion-flush xxx" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Self Preferencing
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Self-preferencing is an anti-competitive practice that involves actions by an undertaking which are designed to favour its own products or services over those of its competitors. Self-preferencing is often
+              described as a subset of a broader type of conduct, known as leveraging. This involves the use of power in one market to strengthen a position in another market. An undertaking with a dominant position in the market, may engage in
+              self-preferencing in order to enhance its own market position, and to prevent or inhibit the entry/expansion of other competitors. In other words, self-preferencing by dominant undertakings may produce exclusionary effects. Some of the
+              notable self-preferencing practices include tying or bundling arrangements; discriminatory conduct and refusal to supply good or services. Self-preferencing is central to contemporary competition law discussions, in particular in
+              digital markets.
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual
+                content.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of
+                content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+    <br>
+    </div>
+   </body>
+
+    </html>
+
+
